@@ -1,4 +1,4 @@
-package lab6;
+package com.mypractical.lab.lab6;
 
 
 import org.testng.annotations.Test;

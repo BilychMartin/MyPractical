@@ -1,4 +1,4 @@
-package com.mypractical.lab;
+package com.mypractical.lab.labku;
 
 /*** */
 public class Firstlab1 {
