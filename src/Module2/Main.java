@@ -13,30 +13,34 @@ public class Main extends MapStore {
 
         MapStore tv = new MapStore();
         Menu menu = new Menu();
-        menu.Entrance();
-
+        ;
         for (int i = 0; ; i++) {
-
-            String otvet = sc.next();
+            menu.Entrance();
+            String otvet = sc.nextLine();
             if (otvet.equalsIgnoreCase("Додати")) {
                 tv.Add();
-            } else if (otvet.equalsIgnoreCase("Пошук")) {
+            } else if (otvet.equalsIgnoreCase("Видалити")) {
+                tv.delit();
+                tv.basketOpenFile();
+
+            } else if (otvet.equalsIgnoreCase("пошук")) {
                 tv.poshuk();
+                tv.basketOpenFile();
+
             } else if (otvet.equalsIgnoreCase("Редрагувати")) {
                 tv.redrag();
-            } else if (otvet.equalsIgnoreCase("Вийти")) {
-                System.exit(0);
-            } else if(otvet.equalsIgnoreCase("Видалити")){
-                tv.delit();
-            }else {
-                System.out.println("Повторіть введення :");
-                System.out.println();
+                tv.basketOpenFile();
+            } else {
+                if (otvet.equalsIgnoreCase("Вийти")) {
+                    System.exit(0);
+
+                }
             }
-            menu.Entrance();
 
         }
 
     }
-
-
 }
+
+
+

@@ -1,14 +1,11 @@
 package Module2;
 
-import tyt.productApp;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * Created by Администратор on 07.12.2015.
@@ -24,13 +21,13 @@ public class MapStore {
     void Add() throws IOException{
 
         System.out.println("Введіть Категорію");
-        String tov = sc.nextLine();
+        String kat = sc.nextLine();
         System.out.print("товар");
         String tovar = sc.nextLine();
         System.out.println("ціна");
         int price = sc.nextInt();
 
-        tv.put(tov, new Product(tovar, price));
+        tv.put(kat, new Product(tovar, price));
 
 
         Set<Map.Entry<String, Object>> tv1 = tv.entrySet();
@@ -57,13 +54,27 @@ public class MapStore {
     }
 
 
+    void basketOpenFile() throws IOException {
+        Map<String, String> savedContacts = new HashMap<>();
+        Scanner scanner = new Scanner(new File("src/Module2/file/basket.txt"));
+        int size = Integer.parseInt(scanner.nextLine());
+        for (int i = 0; i < size; i++) {
+            String tovar = sc.nextLine();
+            String price = sc.nextLine();
+            savedContacts.put(tovar, price);
+
+        }tv.putAll(savedContacts);
+
+
+    }
+
     void poshuk() {
         System.out.println("Введіть шуканий товар:");
-        String name = sc.nextLine();
+        String tovar = sc.nextLine();
 
-        if (tv.containsKey(name)) {
+        if (tv.containsKey(tovar)) {
 
-            System.out.println(tv.get(name));
+            System.out.println(tv.get(tovar));
         } else {
             System.out.println("Товара неіснує");
             System.out.println("-----------------------");
@@ -73,17 +84,17 @@ public class MapStore {
 
     void redrag() {
         System.out.println("Введіть ім'я яке ви будете редрагувати");
-        String name = sc.next();
-        if (tv.containsKey(name)) {
-            System.out.println(tv.get(name));
+        String tovar = sc.next();
+        if (tv.containsKey(tovar)) {
+            System.out.println(tv.get(tovar));
             System.out.println("Введіть інший товар :");
             String tovar1 = sc.nextLine();
             System.out.print("нову ціну :");
             int price1 = sc.nextInt();
 
 
-            tv.remove(name);
-            tv.put(name, new Product(tovar1, price1));
+            tv.remove(tovar);
+            tv.put(tovar, new Product(tovar1, price1));
         } else {
             System.out.println("Товара неіснує");
             System.out.println();
