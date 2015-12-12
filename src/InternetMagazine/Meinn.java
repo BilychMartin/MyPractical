@@ -1,5 +1,4 @@
-package ModuleFinished;
-
+package InternetMagazine;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,12 +7,12 @@ import java.util.*;
 /**
  * Created by Администратор on 12.12.2015.
  */
-public class Mein {
+public class Meinn {
     public static void main(String[] args) throws java.io.IOException {
 
         Scanner sc = new Scanner(System.in);
 
-        File myFile = new File("src/ModuleFinished/Sklad.txt");
+        File myFile = new File("src/InternetMagazine/Sklad.txt");
         try {
             FileWriter writer = new FileWriter(myFile);
 
@@ -52,8 +51,8 @@ public class Mein {
                 System.out.println("ДЛЯ ПЕРЕГЛЯДУ МОДЕЛЕЙ ВВЕДІТЬ КАТЕГОРІЮ ПОТРІБНОГО ВАМ ТОВАРУ(iз списку): \n Ноутбуки \n Телефони \n Телевізори \n Фотоапарати \n Наушники \n Видеокамери \n Музикальніцентри \n Холодильники \n Планшети");
                 String model = sc.next();
 
-                List<Goods> tovari = shopApp.getByCategory(model);
-                for (Goods mod : tovari) {
+                List<Goodss> tovari = shopApp.getByCategory(model);
+                for (Goodss mod : tovari) {
                     System.out.println(mod);
                 }
 
