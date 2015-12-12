@@ -22,6 +22,7 @@ public class Goods {
     }
 
     public Set<String> getCategories() {
+
         return categories;
     }
 
@@ -31,26 +32,32 @@ public class Goods {
     }
 
     public String getProduct() {
+
         return product;
     }
 
     public void setName(String product) {
+
         this.product = product;
     }
 
     public String getModel() {
+
         return model;
     }
 
     public void setModel(String model) {
+
         this.model = model;
     }
 
     public int getPrice() {
+
         return price;
     }
 
     public void setPrice(int price) {
+
         this.price = price;
     }
 

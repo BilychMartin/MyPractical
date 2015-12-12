@@ -16,7 +16,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        File myFile = new File("src/Module2Finished/Sklad.txt");
+        File myFile = new File("src/Module2Finished/file/Sklad.txt");
         try {
             FileWriter writer = new FileWriter(myFile);
 

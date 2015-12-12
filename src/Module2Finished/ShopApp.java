@@ -80,9 +80,6 @@ public class ShopApp {
         tovr.add(new Goods("Планшет", "DELL", 2999).addCategory("Планшети"));
 
 
-
-
-
     }
 
 
@@ -97,12 +94,8 @@ public class ShopApp {
     }
 
 
-
-
-
-
     void addNew() throws FileNotFoundException {
-        PrintWriter writer = new PrintWriter("src/Module2Finished/Korzina2");
+        PrintWriter writer = new PrintWriter("src/Module2Finished/file/Korzina");
         Scanner scanner = new Scanner(System.in);
         System.out.println("****************************************");
         System.out.println("**ДЛЯ ТОГО ЩОБ КУПИТИ ТОВАР ПОТРІБНО: **");
@@ -114,7 +107,7 @@ public class ShopApp {
         System.out.println("***ВВЕСТИ ЦІНУ ТОВАРА (ІЗ СПИСКА)***  ");
         int price = sc.nextInt();
 
-        writer.println("Товар \t" + tovar + " \t" +   "Модель \t" + model + " \t" +"Ціна \t" + price);
+        writer.println("Товар \t" + tovar + " \t" + "Модель \t" + model + " \t" + "Ціна \t" + price);
 
         writer.close();
         System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
