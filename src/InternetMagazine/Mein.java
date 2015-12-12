@@ -3,11 +3,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
-
 /**
  * Created by Администратор on 12.12.2015.
  */
-public class Meinn {
+public class Mein {
     public static void main(String[] args) throws java.io.IOException {
 
         Scanner sc = new Scanner(System.in);
@@ -51,8 +50,8 @@ public class Meinn {
                 System.out.println("ДЛЯ ПЕРЕГЛЯДУ МОДЕЛЕЙ ВВЕДІТЬ КАТЕГОРІЮ ПОТРІБНОГО ВАМ ТОВАРУ(iз списку): \n Ноутбуки \n Телефони \n Телевізори \n Фотоапарати \n Наушники \n Видеокамери \n Музикальніцентри \n Холодильники \n Планшети");
                 String model = sc.next();
 
-                List<Goodss> tovari = shopApp.getByCategory(model);
-                for (Goodss mod : tovari) {
+                List<Goods> tovari = shopApp.getByCategory(model);
+                for (Goods mod : tovari) {
                     System.out.println(mod);
                 }
 

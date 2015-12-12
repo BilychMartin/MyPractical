@@ -6,7 +6,7 @@ package InternetMagazine;
 /**
  * Created by Администратор on 12.12.2015.
  */
-public class Goodss {
+public class Goods {
 
     private String product;
     private String model;
@@ -14,7 +14,7 @@ public class Goodss {
     private Set<String> categories = new HashSet<>();
 
 
-    public Goodss(String product, String model, int price) {
+    public Goods(String product, String model, int price) {
 
         this.product = product;
         this.model = model;
@@ -26,7 +26,7 @@ public class Goodss {
         return categories;
     }
 
-    public Goodss addCategory(String category) {
+    public Goods addCategory(String category) {
         categories.add(category);
         return this;
     }

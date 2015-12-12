@@ -14,77 +14,77 @@ public class ShopApp {
 
     Scanner sc = new Scanner(System.in);
 
-    private List<Goodss> tovr = new ArrayList<>();
+    private List<Goods> tovr = new ArrayList<>();
     public static List<String> addtov = new LinkedList<>();
 
     public ShopApp() {
 
-        tovr.add(new Goodss("Ноутбук", "Asus ", 22580).addCategory("Ноутбуки"));
-        tovr.add(new Goodss("Ноутбук", "Aser", 9750).addCategory("Ноутбуки"));
-        tovr.add(new Goodss("Ноутбук", "Lenovo", 18875).addCategory("Ноутбуки"));
-        tovr.add(new Goodss("Ноутбук", "HP", 15748).addCategory("Ноутбуки"));
-        tovr.add(new Goodss("Ноутбук", "Dell", 10200).addCategory("Ноутбуки"));
+        tovr.add(new Goods("Ноутбук", "Asus ", 22580).addCategory("Ноутбуки"));
+        tovr.add(new Goods("Ноутбук", "Aser", 9750).addCategory("Ноутбуки"));
+        tovr.add(new Goods("Ноутбук", "Lenovo", 18875).addCategory("Ноутбуки"));
+        tovr.add(new Goods("Ноутбук", "HP", 15748).addCategory("Ноутбуки"));
+        tovr.add(new Goods("Ноутбук", "Dell", 10200).addCategory("Ноутбуки"));
 
-        tovr.add(new Goodss("Телефон", "Samsung", 14670).addCategory("Телефони"));
-        tovr.add(new Goodss("Телефон", "Nokia", 4840).addCategory("Телефони"));
-        tovr.add(new Goodss("Телефон", "Lenovo", 4879).addCategory("Телефони"));
-        tovr.add(new Goodss("Телефон", "Sony", 8795).addCategory("Телефони"));
-        tovr.add(new Goodss("Телефон", "HTC", 9888).addCategory("Телефони"));
+        tovr.add(new Goods("Телефон", "Samsung", 14670).addCategory("Телефони"));
+        tovr.add(new Goods("Телефон", "Nokia", 4840).addCategory("Телефони"));
+        tovr.add(new Goods("Телефон", "Lenovo", 4879).addCategory("Телефони"));
+        tovr.add(new Goods("Телефон", "Sony", 8795).addCategory("Телефони"));
+        tovr.add(new Goods("Телефон", "HTC", 9888).addCategory("Телефони"));
 
-        tovr.add(new Goodss("Телевізор", "Samsung", 4587).addCategory("Телевізори"));
-        tovr.add(new Goodss("Телевізор", "LG", 28980).addCategory("Телевізори"));
-        tovr.add(new Goodss("Телевізор", "Sony", 30000).addCategory("Телевізори"));
-        tovr.add(new Goodss("Телевізор", "Philips", 4788).addCategory("Телевізори"));
-        tovr.add(new Goodss("Телевізор", "Toshiba", 7489).addCategory("Телевізори"));
+        tovr.add(new Goods("Телевізор", "Samsung", 4587).addCategory("Телевізори"));
+        tovr.add(new Goods("Телевізор", "LG", 28980).addCategory("Телевізори"));
+        tovr.add(new Goods("Телевізор", "Sony", 30000).addCategory("Телевізори"));
+        tovr.add(new Goods("Телевізор", "Philips", 4788).addCategory("Телевізори"));
+        tovr.add(new Goods("Телевізор", "Toshiba", 7489).addCategory("Телевізори"));
 
-        tovr.add(new Goodss("Фотоапарат", "Canon", 15444).addCategory("Фотоапарати"));
-        tovr.add(new Goodss("Фотоапарат", "Nikon", 9554).addCategory("Фотоапарати"));
-        tovr.add(new Goodss("Фотоапарат", "Sony", 3554).addCategory("Фотоапарати"));
-        tovr.add(new Goodss("Фотоапарат", "Panasonic", 7845).addCategory("Фотоапарати"));
-        tovr.add(new Goodss("Фотоапарат", "Olympus", 7451).addCategory("Фотоапарати"));
+        tovr.add(new Goods("Фотоапарат", "Canon", 15444).addCategory("Фотоапарати"));
+        tovr.add(new Goods("Фотоапарат", "Nikon", 9554).addCategory("Фотоапарати"));
+        tovr.add(new Goods("Фотоапарат", "Sony", 3554).addCategory("Фотоапарати"));
+        tovr.add(new Goods("Фотоапарат", "Panasonic", 7845).addCategory("Фотоапарати"));
+        tovr.add(new Goods("Фотоапарат", "Olympus", 7451).addCategory("Фотоапарати"));
 
-        tovr.add(new Goodss("Наушники", "Probass", 245).addCategory("Наушники"));
-        tovr.add(new Goodss("Наушники", "Beats Audio", 427).addCategory("Наушники"));
-        tovr.add(new Goodss("Наушники", "Sennhaizer", 343).addCategory("Наушники"));
-        tovr.add(new Goodss("Наушники", "Jabra", 500).addCategory("Наушники"));
-        tovr.add(new Goodss("Наушники", "Htc", 788).addCategory("Наушники"));
+        tovr.add(new Goods("Наушники", "Probass", 245).addCategory("Наушники"));
+        tovr.add(new Goods("Наушники", "Beats Audio", 427).addCategory("Наушники"));
+        tovr.add(new Goods("Наушники", "Sennhaizer", 343).addCategory("Наушники"));
+        tovr.add(new Goods("Наушники", "Jabra", 500).addCategory("Наушники"));
+        tovr.add(new Goods("Наушники", "Htc", 788).addCategory("Наушники"));
 
-        tovr.add(new Goodss("Видеокамера", "GoPro", 15399).addCategory("Видеокамери"));
-        tovr.add(new Goodss("Видеокамера", "SJCAM", 1799).addCategory("Видеокамери"));
-        tovr.add(new Goodss("Видеокамера", "Sony", 12999).addCategory("Видеокамери"));
-        tovr.add(new Goodss("Видеокамера", "Panasonic", 21999).addCategory("Видеокамери"));
-        tovr.add(new Goodss("Видеокамера", "Xiomi", 2199).addCategory("Видеокамери"));
-        tovr.add(new Goodss("Видеокамера", "Canon", 21132).addCategory("Видеокамери"));
-        tovr.add(new Goodss("Видеокамера", "Nikon", 28199).addCategory("Видеокамери"));
+        tovr.add(new Goods("Видеокамера", "GoPro", 15399).addCategory("Видеокамери"));
+        tovr.add(new Goods("Видеокамера", "SJCAM", 1799).addCategory("Видеокамери"));
+        tovr.add(new Goods("Видеокамера", "Sony", 12999).addCategory("Видеокамери"));
+        tovr.add(new Goods("Видеокамера", "Panasonic", 21999).addCategory("Видеокамери"));
+        tovr.add(new Goods("Видеокамера", "Xiomi", 2199).addCategory("Видеокамери"));
+        tovr.add(new Goods("Видеокамера", "Canon", 21132).addCategory("Видеокамери"));
+        tovr.add(new Goods("Видеокамера", "Nikon", 28199).addCategory("Видеокамери"));
 
-        tovr.add(new Goodss("Музикальний Центр", "Philips", 1199).addCategory("Музикальніцентри"));
-        tovr.add(new Goodss("Музикальний Центр", "Sony", 7999).addCategory("Музикальніцентри"));
-        tovr.add(new Goodss("Музикальний Центр", "Samsung", 9399).addCategory("Музикальніцентри"));
-        tovr.add(new Goodss("Музикальний Центр", "Panasonic", 3199).addCategory("Музикальніцентри"));
-        tovr.add(new Goodss("Музикальний Центр", "LG", 4139).addCategory("Музикальніцентри"));
+        tovr.add(new Goods("Музикальний Центр", "Philips", 1199).addCategory("Музикальніцентри"));
+        tovr.add(new Goods("Музикальний Центр", "Sony", 7999).addCategory("Музикальніцентри"));
+        tovr.add(new Goods("Музикальний Центр", "Samsung", 9399).addCategory("Музикальніцентри"));
+        tovr.add(new Goods("Музикальний Центр", "Panasonic", 3199).addCategory("Музикальніцентри"));
+        tovr.add(new Goods("Музикальний Центр", "LG", 4139).addCategory("Музикальніцентри"));
 
-        tovr.add(new Goodss("Холодильник", "INDESIT", 5169).addCategory("Холодильники"));
-        tovr.add(new Goodss("Холодильник", "ATLANT", 8799).addCategory("Холодильники"));
-        tovr.add(new Goodss("Холодильник", "Samsung", 25919).addCategory("Холодильники"));
-        tovr.add(new Goodss("Холодильник", "ZANUSSI", 11999).addCategory("Холодильники"));
-        tovr.add(new Goodss("Холодильник", "BOSCH", 9999).addCategory("Холодильники"));
-        tovr.add(new Goodss("Холодильник", "FREGGIA", 24250).addCategory("Холодильники"));
+        tovr.add(new Goods("Холодильник", "INDESIT", 5169).addCategory("Холодильники"));
+        tovr.add(new Goods("Холодильник", "ATLANT", 8799).addCategory("Холодильники"));
+        tovr.add(new Goods("Холодильник", "Samsung", 25919).addCategory("Холодильники"));
+        tovr.add(new Goods("Холодильник", "ZANUSSI", 11999).addCategory("Холодильники"));
+        tovr.add(new Goods("Холодильник", "BOSCH", 9999).addCategory("Холодильники"));
+        tovr.add(new Goods("Холодильник", "FREGGIA", 24250).addCategory("Холодильники"));
 
-        tovr.add(new Goodss("Планшет", "ASUS", 4587).addCategory("Планшети"));
-        tovr.add(new Goodss("Планшет", "APPLE", 14555).addCategory("Планшети"));
-        tovr.add(new Goodss("Планшет", "LG", 2547).addCategory("Планшети"));
-        tovr.add(new Goodss("Планшет", "SONY", 5789).addCategory("Планшети"));
-        tovr.add(new Goodss("Планшет", "Lenovo", 7449).addCategory("Планшети"));
-        tovr.add(new Goodss("Планшет", "Microsoft", 6999).addCategory("Планшети"));
-        tovr.add(new Goodss("Планшет", "DELL", 2999).addCategory("Планшети"));
+        tovr.add(new Goods("Планшет", "ASUS", 4587).addCategory("Планшети"));
+        tovr.add(new Goods("Планшет", "APPLE", 14555).addCategory("Планшети"));
+        tovr.add(new Goods("Планшет", "LG", 2547).addCategory("Планшети"));
+        tovr.add(new Goods("Планшет", "SONY", 5789).addCategory("Планшети"));
+        tovr.add(new Goods("Планшет", "Lenovo", 7449).addCategory("Планшети"));
+        tovr.add(new Goods("Планшет", "Microsoft", 6999).addCategory("Планшети"));
+        tovr.add(new Goods("Планшет", "DELL", 2999).addCategory("Планшети"));
 
 
     }
 
 
-    public List<Goodss> getByCategory(String category) {
-        List<Goodss> filteredList = new ArrayList<>();
-        for (Goodss product : tovr) {
+    public List<Goods> getByCategory(String category) {
+        List<Goods> filteredList = new ArrayList<>();
+        for (Goods product : tovr) {
             if (product.getCategories().contains(category))
                 filteredList.add(product);
         }
